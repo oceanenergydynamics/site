@@ -4,9 +4,22 @@ body {
     margin: 0;
     padding: 0;
     color: #fff;
-    background: linear-gradient(to bottom, #1e3c72, #2a5298); /* Ocean wave gradient */
-    background-attachment: fixed;
+    background: linear-gradient(45deg, #1e3c72, #2a5298, #102245);
+    background-size: 300% 300%;
+    animation: gradientShift 10s ease infinite; /* Animation for moving granite effect */
     line-height: 1.6;
+}
+
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 header {
@@ -39,10 +52,6 @@ nav ul {
     gap: 20px;
 }
 
-nav ul li {
-    display: inline;
-}
-
 nav ul li a {
     color: #f0f8ff;
     text-decoration: none;
@@ -58,16 +67,6 @@ nav ul li a:hover {
     max-width: 1100px;
     margin: auto;
     padding: 20px;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 h2 {
@@ -77,16 +76,6 @@ h2 {
     border-bottom: 2px solid #ff7f50;
     display: inline-block;
     margin-bottom: 20px;
-    animation: slideIn 1.2s ease-in-out;
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateX(-100%);
-    }
-    to {
-        transform: translateX(0);
-    }
 }
 
 section {
@@ -107,11 +96,12 @@ section {
 .team-member {
     flex: 1;
     min-width: 200px;
+    max-width: 300px;
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
     margin: 10px 0;
     border: 1px solid #ff7f50;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
     transition: transform 0.3s, background 0.3s;
 }
@@ -119,6 +109,20 @@ section {
 .team-member:hover {
     transform: scale(1.05);
     background: rgba(255, 127, 80, 0.2);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #ff7f50;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .video-container iframe,
