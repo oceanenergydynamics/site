@@ -1,12 +1,12 @@
-/* styles.css */
+/* main.css */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
-    background: linear-gradient(45deg, #1e3c72, #2a5298, #102245);
+    color: #f0f8ff;
+    background: linear-gradient(45deg, #1e3c72, #2a5298, #142850);
     background-size: 300% 300%;
-    animation: gradientShift 10s ease infinite; /* Animation for moving granite effect */
+    animation: gradientShift 15s ease infinite; /* Smooth gradient animation */
     line-height: 1.6;
 }
 
@@ -23,24 +23,29 @@ body {
 }
 
 header {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 50, 0.8);
     text-align: center;
     padding: 20px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+header:hover {
+    background-color: rgba(0, 0, 80, 0.9);
 }
 
 header h1 {
     margin: 0;
     font-size: 3em;
-    color: #f0f8ff;
+    color: #ffffff;
 }
 
 header p {
     font-size: 1.2em;
-    color: #b0c4de;
+    color: #d1e7f0;
 }
 
 nav ul {
@@ -53,14 +58,14 @@ nav ul {
 }
 
 nav ul li a {
-    color: #f0f8ff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ff7f50;
+    color: #00b4d8;
 }
 
 .container {
@@ -71,9 +76,9 @@ nav ul li a:hover {
 
 h2 {
     text-align: center;
-    color: #f0f8ff;
+    color: #d1e7f0;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    border-bottom: 2px solid #ff7f50;
+    border-bottom: 2px solid #00b4d8;
     display: inline-block;
     margin-bottom: 20px;
 }
@@ -81,9 +86,17 @@ h2 {
 section {
     margin: 20px 0;
     padding: 30px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 50, 0.6);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+section.animate-section {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .team {
@@ -100,7 +113,7 @@ section {
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
     margin: 10px 0;
-    border: 1px solid #ff7f50;
+    border: 1px solid #00b4d8;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s, background 0.3s;
@@ -108,7 +121,7 @@ section {
 
 .team-member:hover {
     transform: scale(1.05);
-    background: rgba(255, 127, 80, 0.2);
+    background: rgba(0, 180, 216, 0.2);
 }
 
 .team-member img {
@@ -116,7 +129,7 @@ section {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
-    border: 3px solid #ff7f50;
+    border: 3px solid #00b4d8;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -139,7 +152,7 @@ form {
 
 form label {
     margin-top: 10px;
-    color: #ff7f50;
+    color: #00b4d8;
 }
 
 form input, form textarea, form button {
@@ -151,7 +164,7 @@ form input, form textarea, form button {
 }
 
 form button {
-    background: #ff7f50;
+    background: #00b4d8;
     color: white;
     border: none;
     cursor: pointer;
@@ -159,12 +172,12 @@ form button {
 }
 
 form button:hover {
-    background: #ff4500;
+    background: #0077b6;
 }
 
 footer {
-    background: rgba(0, 0, 0, 0.9);
-    color: #b0c4de;
+    background: rgba(0, 0, 50, 0.9);
+    color: #d1e7f0;
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
