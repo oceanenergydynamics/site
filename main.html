@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Energy Dynamics</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+            alert('Thank you for reaching out! We will get back to you shortly.');
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -53,18 +59,22 @@
             <h2>Meet the Team</h2>
             <div class="team">
                 <div class="team-member">
-                    <h3>Nick</h3>
+                    <img src="images/nick.jpg" alt="Nick's photo">
+                    <h3>Nikhil (Nick) Dev</h3>
                     <p>Strategic lead, market research, and business planning.</p>
                 </div>
                 <div class="team-member">
+                    <img src="images/dev.jpg" alt="Dev's photo">
                     <h3>Dev</h3>
                     <p>Technical oversight, project coordination, and 3D modeling.</p>
                 </div>
                 <div class="team-member">
+                    <img src="images/gaurang.jpg" alt="Gaurang's photo">
                     <h3>Gaurang</h3>
                     <p>Engineering design, prototype development, and testing.</p>
                 </div>
                 <div class="team-member">
+                    <img src="images/michael.jpg" alt="Michael's photo">
                     <h3>Michael</h3>
                     <p>Marketing, communication, and stakeholder engagement.</p>
                 </div>
@@ -96,7 +106,7 @@
         <div class="container">
             <h2>Contact Us</h2>
             <p>Have questions or want to collaborate? Reach out to us!</p>
-            <form action="#" method="post">
+            <form onsubmit="handleSubmit(event)">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
 
