@@ -3,27 +3,28 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    color: #f0f8ff;
-    background: linear-gradient(45deg, #1e3c72, #2a5298, #142850);
-    background-size: 300% 300%;
-    animation: gradientShift 15s ease infinite; /* Smooth gradient animation */
+    color: #ffffff; /* Bright white for better readability */
+    background: #000000; /* Fallback color */
     line-height: 1.6;
+    position: relative;
+    overflow: hidden;
 }
 
-@keyframes gradientShift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+/* Ocean video background */
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.7; /* Slightly dim the video for better text visibility */
 }
 
+/* General styles */
 header {
-    background: rgba(0, 0, 50, 0.8);
+    background: rgba(0, 0, 0, 0.8);
     text-align: center;
     padding: 20px 0;
     position: sticky;
@@ -34,18 +35,18 @@ header {
 }
 
 header:hover {
-    background-color: rgba(0, 0, 80, 0.9);
+    background-color: rgba(0, 0, 50, 0.9);
 }
 
 header h1 {
     margin: 0;
     font-size: 3em;
-    color: #ffffff;
+    color: #f4f4f4;
 }
 
 header p {
     font-size: 1.2em;
-    color: #d1e7f0;
+    color: #c0d9e1;
 }
 
 nav ul {
@@ -58,7 +59,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: #f4f4f4;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
@@ -76,7 +77,7 @@ nav ul li a:hover {
 
 h2 {
     text-align: center;
-    color: #d1e7f0;
+    color: #f4f4f4;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     border-bottom: 2px solid #00b4d8;
     display: inline-block;
@@ -86,7 +87,7 @@ h2 {
 section {
     margin: 20px 0;
     padding: 30px;
-    background: rgba(0, 0, 50, 0.6);
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent background for better text readability */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     opacity: 0;
@@ -99,59 +100,16 @@ section.animate-section {
     transform: translateY(0);
 }
 
-.team {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.team-member {
-    flex: 1;
-    min-width: 200px;
-    max-width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    margin: 10px 0;
-    border: 1px solid #00b4d8;
-    border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s, background 0.3s;
-}
-
-.team-member:hover {
-    transform: scale(1.05);
-    background: rgba(0, 180, 216, 0.2);
-}
-
+/* Additional styles for team and form */
 .team-member img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
     border: 3px solid #00b4d8;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.team-member img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-.video-container iframe,
-.model-container iframe {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
 }
 
 form label {
-    margin-top: 10px;
     color: #00b4d8;
 }
 
@@ -168,18 +126,4 @@ form button {
     color: white;
     border: none;
     cursor: pointer;
-    transition: background 0.3s;
-}
-
-form button:hover {
-    background: #0077b6;
-}
-
-footer {
-    background: rgba(0, 0, 50, 0.9);
-    color: #d1e7f0;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    font-size: 0.9em;
 }
