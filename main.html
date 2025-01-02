@@ -5,142 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Energy Dynamics</title>
     <link rel="stylesheet" href="main.css">
-    <script src="main.js"></script>
-    <script>
-        function handleSubmit(event) {
-            event.preventDefault(); // Prevent the form from submitting normally
-            alert('Thank you for reaching out! We will get back to you shortly.');
-        }
-
-        // Function to add animations to each section on scroll
-        document.addEventListener("DOMContentLoaded", function () {
-            const sections = document.querySelectorAll("section");
-
-            const observer = new IntersectionObserver(
-                (entries) => {
-                    entries.forEach((entry) => {
-                        if (entry.isIntersecting) {
-                            entry.target.classList.add("animate-section");
-                        }
-                    });
-                },
-                {
-                    threshold: 0.5,
-                }
-            );
-
-            sections.forEach((section) => {
-                observer.observe(section);
-            });
-        });
-    </script>
 </head>
 <body>
+    <!-- Ocean video background -->
+    <video autoplay muted loop id="video-background">
+        <source src="ocean-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <header>
         <div class="container">
             <h1>Ocean Energy Dynamics</h1>
             <p>Revolutionizing maritime energy with sustainable wave-powered innovation</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#story">Our Story</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#video">Innovation Video</a></li>
-                    <li><a href="#model">3D Model</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
         </div>
     </header>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Ocean Energy Dynamics</h2>
-            <p>
-                Ocean Energy Dynamics harnesses the untapped power of ocean waves to revolutionize energy solutions for the maritime industry. Our innovation provides sustainable, efficient, and scalable energy systems for vessels of all sizes, eliminating reliance on fossil fuels and reducing environmental impact.
-            </p>
-            <p>
-                The system captures wave energy using advanced oscillators, hydraulic turbines, and a closed-loop system that ensures continuous energy generation. With minimal maintenance, compact design, and unparalleled efficiency, Ocean Energy Dynamics is the future of maritime energy.
-            </p>
-        </div>
+    <section id="about" class="container">
+        <h2>About Ocean Energy Dynamics</h2>
+        <p>
+            Ocean Energy Dynamics harnesses the untapped power of ocean waves to revolutionize energy solutions for the maritime industry. Our innovation provides sustainable, efficient, and scalable energy systems for vessels of all sizes, eliminating reliance on fossil fuels and reducing environmental impact.
+        </p>
     </section>
 
-    <section id="story">
-        <div class="container">
-            <h2>Our Story</h2>
-            <p>
-                Ocean Energy Dynamics began as an ambitious idea shared by a group of passionate innovators who sought to tackle the pressing challenges of fuel dependency and environmental degradation in the maritime industry. With diverse expertise in engineering, business strategy, and environmental science, our team came together to design a solution that marries sustainability with practicality.
-            </p>
-            <p>
-                From early brainstorming sessions to prototyping and testing, our journey has been driven by a singular vision: to create a renewable energy system that transforms how ships harness and use energy. What started as a school project quickly evolved into a groundbreaking innovation poised to reshape the future of maritime travel. Today, Ocean Energy Dynamics stands as a testament to our belief that innovative thinking can drive meaningful change for industries and the environment.
-            </p>
-        </div>
-    </section>
-
-    <section id="team">
-        <div class="container">
-            <h2>Meet the Team</h2>
-            <div class="team">
-                <div class="team-member">
-                    <img src="images/nick.jpg" alt="Nick's photo">
-                    <h3>Nikhil (Nick) Dev</h3>
-                    <p>Strategic lead, market research, and business planning.</p>
-                </div>
-                <div class="team-member">
-                    <img src="images/dev.jpg" alt="Dev's photo">
-                    <h3>Dev</h3>
-                    <p>Technical oversight, project coordination, and 3D modeling.</p>
-                </div>
-                <div class="team-member">
-                    <img src="images/gaurang.jpg" alt="Gaurang's photo">
-                    <h3>Gaurang</h3>
-                    <p>Engineering design, prototype development, and testing.</p>
-                </div>
-                <div class="team-member">
-                    <img src="images/michael.jpg" alt="Michael's photo">
-                    <h3>Michael</h3>
-                    <p>Marketing, communication, and stakeholder engagement.</p>
-                </div>
+    <section id="team" class="container">
+        <h2>Meet the Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <img src="nick.jpg" alt="Nikhil (Nick) Dev">
+                <h3>Nikhil (Nick) Dev</h3>
+                <p>Strategic lead, market research, and business planning.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="video">
-        <div class="container">
-            <h2>Innovation Video</h2>
-            <p>Watch our pitch to learn how Ocean Energy Dynamics transforms wave energy into a reliable and eco-friendly power source for vessels.</p>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+            <div class="team-member">
+                <img src="dev.jpg" alt="Dev">
+                <h3>Dev</h3>
+                <p>Technical oversight, project coordination, and 3D modeling.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="model">
-        <div class="container">
-            <h2>Explore the 3D Model</h2>
-            <p>Interact with our 3D model to see how Ocean Energy Dynamics works.</p>
-            <div class="model-container">
-                <iframe src="https://your-3d-model-url.com" width="100%" height="500px" frameborder="0"></iframe>
+            <div class="team-member">
+                <img src="gaurang.jpg" alt="Gaurang">
+                <h3>Gaurang</h3>
+                <p>Engineering design, prototype development, and testing.</p>
             </div>
-        </div>
-    </section>
-
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Have questions or want to collaborate? Reach out to us!</p>
-            <form onsubmit="handleSubmit(event)">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
+            <div class="team-member">
+                <img src="michael.jpg" alt="Michael">
+                <h3>Michael</h3>
+                <p>Marketing, communication, and stakeholder engagement.</p>
+            </div>
         </div>
     </section>
 
