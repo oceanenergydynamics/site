@@ -259,7 +259,7 @@ p {
 
 /* Contact Us */
 form {
-    width: -webkit-fill-available
+    width: -webkit-fill-available;
     margin: 20px 0;
     display: flex;
     flex-direction: column;
