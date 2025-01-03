@@ -7,7 +7,7 @@
     height: 100%;
     z-index: -1;
     object-fit: cover;
-    opacity: 0.6;
+    opacity: 0.5;
 }
 
 body {
@@ -15,35 +15,63 @@ body {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    background: transparent;
     line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 30px;
 }
 
 .container {
     max-width: 1100px;
-    margin: auto;
+    margin: 20px auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
+    animation: fadeIn 1.5s ease;
 }
 
-.fade-in {
-    opacity: 1;
-    transform: translateY(0);
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
 
-h1, h2 {
+.team-member {
     text-align: center;
-    color: #ffffff;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s;
 }
 
-#system-video, iframe {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
 }
