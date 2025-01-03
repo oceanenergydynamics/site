@@ -6,22 +6,15 @@ document.addEventListener("DOMContentLoaded", function () {
         (entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add("animate-section");
+                    entry.target.style.opacity = "1";
+                    entry.target.style.transform = "translateY(0)";
                 }
             });
         },
-        {
-            threshold: 0.5, // Trigger animation when 50% of the section is visible
-        }
+        { threshold: 0.5 }
     );
 
     sections.forEach((section) => {
         observer.observe(section);
     });
 });
-
-// Function to handle form submission (if any forms exist)
-function handleSubmit(event) {
-    event.preventDefault(); // Prevent the default form submission
-    alert("Thank you for reaching out! We will get back to you shortly.");
-}
