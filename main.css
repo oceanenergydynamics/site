@@ -195,6 +195,7 @@ p {
 
 /* Media Section */
 .media {
+    display: contents;
     text-align: center;
     margin-top: 20px;
 }
@@ -211,8 +212,7 @@ p {
 
 .large-frame {
     width: 100%;
-    max-width: 1500px; /* Increased width */
-    height: 700px; /* Adjusted height */
+    height: 550px; /* Adjusted height */
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
