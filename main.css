@@ -19,7 +19,7 @@ body {
     height: 100%;
     z-index: -1;
     object-fit: cover;
-    opacity: 0.6; /* Dim the video for text visibility */
+    opacity: 0.6;
 }
 
 /* General container for text boxes */
@@ -27,7 +27,7 @@ body {
     max-width: 1100px;
     margin: auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7); /* Dark transparent background for text boxes */
+    background: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
@@ -59,40 +59,32 @@ section {
     margin: 20px 0;
     padding: 30px;
     border-radius: 10px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease, transform 1s ease;
 }
 
-section.animate-section {
-    opacity: 1;
-    transform: translateY(0);
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
-/* Team section styles */
 .team-member {
+    text-align: center;
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
     border-radius: 10px;
-    text-align: center;
-    transition: transform 0.3s ease, background 0.3s ease;
+    width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
 }
 
 .team-member img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 3px solid #00b4d8;
     margin-bottom: 10px;
-    object-fit: cover; /* Ensure the images fit properly */
-}
-
-/* Footer styles */
-footer {
-    background: rgba(0, 0, 0, 0.9);
-    color: #c0d9e1;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    font-size: 0.9em;
+    border: 2px solid #00b4d8;
 }
