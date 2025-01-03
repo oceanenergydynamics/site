@@ -36,13 +36,19 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em; /* Increased font size */
+    font-size: 2.8em; /* Increased font size */
     color: #ffffff;
     font-family: 'Bebas Neue', cursive;
 }
 
+header p {
+    color: #ffffff; /* Made slogan white */
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.2em;
+}
+
 header img {
-    height: 150px; /* Adjusted size */
+    height: 180px; /* Adjusted size */
     margin-right: 10px;
 }
 
@@ -79,7 +85,7 @@ nav ul li a:hover {
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.9); /* Reduced transparency */
+    background: rgba(255, 255, 255, 0.92); /* Adjusted transparency */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -101,11 +107,11 @@ h2 {
 }
 
 .step {
-    width: 300px; /* Adjusted width */
-    height: 350px; /* Adjusted height */
+    width: 350px; /* Adjusted width */
+    height: 400px; /* Adjusted height */
     padding: 20px;
     border: 1px solid #00b4d8;
-    background: rgba(0, 180, 216, 0.1);
+    background: rgba(0, 180, 216, 0.15); /* Adjusted transparency */
     border-radius: 10px;
     text-align: center;
     font-family: 'Roboto Slab', serif;
@@ -143,7 +149,7 @@ form {
     font-weight: 800;
     max-width: 1500px; /* Increased width */
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Reduced transparency */
+    background: rgba(255, 255, 255, 0.92); /* Adjusted transparency */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
@@ -163,8 +169,8 @@ form {
     border: 1px solid #00b4d8;
     border-radius: 10px;
     transition: transform 0.3s ease, background 0.3s ease;
-    width: 350px; /* Increased size */
-    height: 400px; /* Increased size */
+    width: 400px; /* Increased size */
+    height: 450px; /* Increased size */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -174,8 +180,8 @@ form {
 }
 
 .team-member img {
-    width: 130px; /* Increased size */
-    height: 130px;
+    width: 150px; /* Increased size */
+    height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
     border: 2px solid #00b4d8;
