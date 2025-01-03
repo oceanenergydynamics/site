@@ -137,6 +137,16 @@ p {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 /* How It Works */
 .diagram {
     display: flex;
