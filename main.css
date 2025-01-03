@@ -41,15 +41,13 @@ p {
 /* Header */
 header {
     width: 100%;
-    margin: 0 auto;
-    padding: 15px;
-    background: rgba(0, 31, 84, 0.8); /* Transparent blue */
-    text-align: center;
+    padding: 10px 15px; /* Reduced padding */
+    background: rgba(0, 31, 84, 0.7); /* Transparent dark blue */
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
+    gap: 5px; /* Reduced gap between elements */
+    text-align: center;
 }
 
 header h1 {
@@ -59,7 +57,7 @@ header h1 {
 }
 
 header img {
-    height: 130px;
+    height: 100px; /* Adjusted smaller logo size */
     margin: 0 auto;
 }
 
@@ -67,7 +65,7 @@ nav ul {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 10px; /* Reduced spacing */
 }
 
 nav ul li {
@@ -79,7 +77,7 @@ nav ul li a {
     font-size: 1em;
     color: #ffffff;
     background: #00509e;
-    padding: 10px 20px;
+    padding: 8px 16px; /* Reduced padding */
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
     font-weight: 800;
@@ -92,12 +90,13 @@ nav ul li a:hover {
 
 /* Sections */
 .container {
-    max-width: 900px; /* Adjusted */
+    max-width: 950px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.9); /* Add transparency */
+    background: rgba(255, 255, 255, 0.8); /* More transparent */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 h2 {
@@ -107,110 +106,53 @@ h2 {
     font-weight: 900;
 }
 
-/* Problem Section */
-.stats {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-    gap: 20px;
-    flex-wrap: wrap;
-    animation: slideInUp 2s ease-in-out;
-}
-
-.stat {
-    text-align: center;
-    font-size: 1.3em;
-    background: rgba(0, 180, 216, 0.1);
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 800;
-    width: 100%;
-    max-width: 400px;
-}
-
-.stat:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* How It Works */
-.diagram {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.step {
-    flex: 1;
-    min-width: 200px;
-    padding: 15px;
-    border: 1px solid #00b4d8;
-    background: rgba(0, 180, 216, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, background 0.3s ease;
-    animation: slideInLeft 1.2s ease-in-out;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 900;
-    text-align: center;
-}
-
-.step:hover {
-    transform: translateY(-5px);
-    background: rgba(0, 180, 216, 0.2);
-}
-
-/* 3D Model Section */
-.large-frame {
-    width: 100%;
-    max-width: 1200px; /* Wider */
-    height: 900px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Our Story */
+/* Team Section */
 .team-members {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    display: flex;
+    justify-content: center; /* Center the squares */
+    gap: 15px; /* Reduced spacing */
+    flex-wrap: wrap;
     animation: fadeIn 2s ease-in-out;
 }
 
 .team-member {
     text-align: center;
-    padding: 15px;
-    background: rgba(0, 180, 216, 0.1);
+    padding: 10px; /* Reduced padding */
+    background: rgba(0, 180, 216, 0.2); /* More transparent */
     border: 1px solid #00b4d8;
     border-radius: 10px;
     transition: transform 0.3s ease, background 0.3s ease;
-    height: 250px;
+    height: 200px; /* Adjusted height */
+    width: 200px; /* Adjusted width */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'PT Serif', serif;
     font-weight: 900;
-    max-width: 300px;
 }
 
 .team-member:hover {
     transform: translateY(-5px);
-    background: rgba(0, 180, 216, 0.2);
+    background: rgba(0, 180, 216, 0.3);
 }
 
 .team-member img {
-    width: 90px;
-    height: 90px;
+    width: 80px; /* Adjusted size */
+    height: 80px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     border: 2px solid #00b4d8;
+}
+
+/* 3D Model Section */
+.large-frame {
+    width: 100%;
+    max-width: 1500px;
+    height: 600px; /* Reduced height */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Contact Us */
@@ -218,13 +160,13 @@ form {
     margin: 20px 0;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px; /* Reduced spacing */
     animation: fadeIn 1.5s ease-in-out;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    max-width: 1200px; /* Wider */
+    max-width: 1500px; /* Wider */
     padding: 20px;
-    background: rgba(255, 255, 255, 0.9); /* Add transparency */
+    background: rgba(255, 255, 255, 0.85); /* Increased transparency */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
