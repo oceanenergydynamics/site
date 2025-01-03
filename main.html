@@ -7,133 +7,144 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- Header with Call to Action -->
+    <!-- Video Background -->
+    <div id="video-container">
+        <video autoplay muted loop id="video-background">
+            <source src="https://rr4---sn-vgqsknes.googlevideo.com/videoplayback?...&type=video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div id="overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#problem-opportunity">Problem & Solution</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#our-story">Our Story</a></li>
+            <li><a href="#contact-us">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header Section -->
     <header>
-        <div class="container">
+        <div class="container header-content">
             <h1>Ocean Energy Dynamics</h1>
-            <p>Revolutionizing maritime energy with sustainable wave-powered innovation</p>
-            <a href="#contact" class="cta-button">Get in Touch</a>
+            <p>Revolutionizing Yachting with Renewable Wave Energy</p>
         </div>
     </header>
 
-    <!-- Mission and Problem -->
-    <section id="mission-problem" class="container">
-        <h2>Our Mission and The Problem</h2>
+    <!-- About Section -->
+    <section id="about" class="container">
+        <h2>About Us</h2>
         <p>
-            Ocean Energy Dynamics addresses two major pain points in the maritime industry: cost inefficiency and environmental impact. Our mission is to redefine maritime energy through sustainable solutions, harnessing wave power to create eco-friendly, cost-effective systems specifically tailored for yachts.
-        </p>
-        <p>
-            <strong>Cost Inefficiency:</strong> Luxury yachts face significant operating expenses, with fuel accounting for approximately 30% of total costs. For instance, a 70-meter yacht consumes over 8,300 liters of fuel for every 100 nautical miles, costing upwards of $7,500 per trip. Traditional engines, with 90% more moving parts, require extensive maintenance, further escalating costs. Renewable alternatives like solar panels and wind turbines are often impractical due to their large space requirements and high installation costs.
-        </p>
-        <p>
-            <strong>Environmental Impact:</strong> The global yacht industry contributes significantly to carbon emissions. A single 70-meter yacht emits approximately 26.4 metric tons of CO₂ over a 100-nautical mile journey, exacerbating climate change. Beyond emissions, environmental risks include oil spills and ocean pollution associated with fuel transport and storage. The maritime sector urgently needs sustainable solutions to reduce its environmental footprint.
+            Ocean Energy Dynamics is redefining the future of yachting by harnessing the ocean’s waves to create sustainable energy. 
+            Our innovation eliminates the need for fossil fuels, offering yacht owners a cleaner, more efficient, and cost-effective solution.
         </p>
     </section>
 
-    <!-- Solution Section -->
-    <section id="solution" class="container">
-        <h2>Our Solution</h2>
-        <p>Ocean Energy Dynamics provides an innovative wave-energy system that addresses the unique challenges of the yacht industry.</p>
-        <ul>
-            <li><strong>Cost Savings:</strong> Reduce operational costs by up to 30% with fuel-efficient technology.</li>
-            <li><strong>Eco-Friendly:</strong> Eliminate harmful emissions and minimize environmental impact.</li>
-            <li><strong>Space-Efficient:</strong> Seamlessly integrate into existing yacht structures without taking up valuable onboard space.</li>
-        </ul>
+    <!-- Problem & Solution Section -->
+    <section id="problem-opportunity" class="container">
+        <h2>The Problem & Solution</h2>
+        <p>
+            The maritime industry, especially luxury yachts, faces a dual challenge: 
+            <strong>high operating costs</strong> and a <strong>significant environmental footprint</strong>. Yachts rely heavily on fossil fuels, 
+            leading to soaring expenses and harmful emissions.
+        </p>
+        <div class="animated-text">
+            <h3>The Problem</h3>
+            <p>
+                Luxury yachts spend <u>30% of their operational budget</u> on fuel alone, amounting to <u>$7,500</u> per 100 nautical miles. 
+                Additionally, a 70-meter yacht emits <u>26.4 metric tons of CO₂</u> over the same journey. These costs and emissions are unsustainable.
+            </p>
+        </div>
+        <div class="animated-text">
+            <h3>Our Solution</h3>
+            <p>
+                Ocean Energy Dynamics replaces fossil fuels with renewable wave energy, eliminating fuel dependency, cutting emissions to 
+                <strong>zero</strong>, and reducing operational costs by 30%.
+            </p>
+        </div>
     </section>
 
     <!-- How It Works Section -->
     <section id="how-it-works" class="container">
         <h2>How It Works</h2>
-        <div class="diagram-container">
-            <div class="diagram-step">
-                <strong>1. Wave Capture</strong>
-                <p>Waves enter through a one-way inlet, powering internal oscillators to start the energy generation process.</p>
+        <div class="diagram">
+            <div class="step">
+                <h3>Wave Energy Capture</h3>
+                <p>Water flows into one-way inlets, filtered to block debris and protect marine life.</p>
             </div>
-            <div class="diagram-step">
-                <strong>2. Energy Conversion</strong>
-                <p>Oscillators drive hydraulic pistons, compressing fluid to spin turbines, converting wave motion into energy.</p>
+            <div class="step">
+                <h3>Hydraulic Conversion</h3>
+                <p>Turbulence-reducing grids and oscillators convert wave motion into hydraulic energy.</p>
             </div>
-            <div class="diagram-step">
-                <strong>3. Power Output</strong>
-                <p>The turbines generate electricity, which feeds the ship's systems, propulsion, and onboard energy needs.</p>
+            <div class="step">
+                <h3>Electricity Generation</h3>
+                <p>Hydraulic turbines convert energy into electricity to power onboard systems.</p>
             </div>
+        </div>
+        <div class="media">
+            <h3>See Our Innovation in Action:</h3>
+            <video controls class="center-video">
+                <source src="innovation-video.mp4" type="video/mp4">
+                Your browser does not support this video.
+            </video>
         </div>
     </section>
 
-    <!-- Innovation Video -->
-    <section id="innovation-video" class="container">
-        <h2>Innovation Video</h2>
-        <p>Watch our pitch to see how Ocean Energy Dynamics transforms wave energy into a reliable power source for yachts.</p>
-        <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-innovation-video-id" 
-                frameborder="0" allowfullscreen></iframe>
-        </div>
-    </section>
-
-    <!-- Our Story -->
+    <!-- Our Story & Team Section -->
     <section id="our-story" class="container">
-        <h2>Our Story</h2>
+        <h2>Our Story & Team</h2>
         <p>
-            Ocean Energy Dynamics began as a bold idea shared by a group of passionate innovators who sought to tackle the pressing challenges of fuel dependency and environmental degradation in the maritime industry. With diverse expertise in engineering, business strategy, and environmental science, our team came together to design a solution that marries sustainability with practicality.
+            Ocean Energy Dynamics was born from a shared passion for solving global energy challenges. 
+            Four classmates – Nick, Dev, Gaurang, and Michael – united their skills to develop a transformative innovation for the maritime industry.
         </p>
-        <p>
-            From early brainstorming sessions to prototyping and testing, our journey has been driven by a singular vision: to create a renewable energy system that transforms how ships harness and use energy. What started as a school project has evolved into a groundbreaking innovation poised to reshape the future of maritime travel.
-        </p>
-    </section>
-
-    <!-- Meet the Team -->
-    <section id="team" class="container">
-        <h2>Meet the Team</h2>
-        <div class="team">
+        <div class="team-members">
             <div class="team-member">
-                <img src="nick.jpg" alt="Nikhil (Nick) Dev">
                 <h3>Nikhil (Nick) Dev</h3>
                 <p>Strategic lead, market research, and business planning.</p>
             </div>
             <div class="team-member">
-                <img src="dev.jpg" alt="Dev">
                 <h3>Dev</h3>
-                <p>Technical oversight, project coordination, and 3D modeling.</p>
+                <p>Project coordinator and 3D modeling expert.</p>
             </div>
             <div class="team-member">
-                <img src="gaurang.jpg" alt="Gaurang">
                 <h3>Gaurang</h3>
-                <p>Engineering design, prototype development, and testing.</p>
+                <p>Lead engineer, specializing in design and prototyping.</p>
             </div>
             <div class="team-member">
-                <img src="michael.jpg" alt="Michael">
                 <h3>Michael</h3>
-                <p>Marketing, communication, and stakeholder engagement.</p>
+                <p>Marketing and communication lead.</p>
             </div>
         </div>
     </section>
 
-    <!-- Contact Us -->
-    <section id="contact" class="container">
+    <!-- Contact Us Section -->
+    <section id="contact-us" class="container">
         <h2>Contact Us</h2>
-        <p>If you have any inquiries, feel free to reach out to us at <a href="mailto:contact@oceanenergydynamics.com">contact@oceanenergydynamics.com</a>.</p>
-        <form onsubmit="handleSubmit(event)">
+        <p>Email us at: <strong>oceanenergydynamics@gmail.com</strong></p>
+        <form id="contact-form">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
 
             <button type="submit">Submit</button>
         </form>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
             <p>&copy; 2025 Ocean Energy Dynamics. All rights reserved.</p>
-            <p><em>Disclaimer: Do not share sensitive or confidential information on this platform.</em></p>
         </div>
     </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
-
