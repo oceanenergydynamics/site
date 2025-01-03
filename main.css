@@ -91,4 +91,8 @@ section.animate-section {
 footer {
     background: rgba(0, 0, 0, 0.9);
     color: #c0d9e1;
-    text-al
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
