@@ -43,7 +43,7 @@ header {
     margin: 30px auto;
     padding: 20px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.95);
+    background: #001f54;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
@@ -57,15 +57,15 @@ header:hover {
 header h1 {
     font-size: 2.5em;
     margin: 10px 0;
-    color: #00509e;
-    animation: fadeIn 1.5s ease-in-out;
+    color: #ffffff;
+    animation: fadeInTitle 1.5s ease-in-out;
 }
 
 header p {
     font-size: 1.2em;
     margin: 10px 0;
-    color: #333;
-    animation: fadeIn 2s ease-in-out;
+    color: #d1e7f0;
+    animation: fadeInSubTitle 2s ease-in-out;
 }
 
 /* Navigation */
@@ -94,6 +94,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #00b4d8;
     color: #ffffff;
+    transform: rotate(-2deg);
 }
 
 /* Sections */
@@ -139,6 +140,7 @@ p {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: bounce 1.5s infinite;
 }
 
 .stat:hover {
@@ -163,6 +165,7 @@ p {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, background 0.3s ease;
+    animation: slideUp 1.2s ease-in-out;
 }
 
 .step:hover {
@@ -183,6 +186,7 @@ p {
     max-width: 720px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 1.5s;
 }
 
 .large-frame {
@@ -212,11 +216,13 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: fadeInMember 1.5s ease-in-out;
 }
 
 .team-member:hover {
     transform: translateY(-5px);
     background: rgba(0, 180, 216, 0.2);
+    animation: pulse 1s;
 }
 
 .team-member img {
@@ -233,6 +239,7 @@ form {
     display: flex;
     flex-direction: column;
     gap: 15px;
+    animation: fadeInForm 1.5s ease-in-out;
 }
 
 form label {
@@ -258,6 +265,7 @@ form button {
 
 form button:hover {
     background: #0077b6;
+    transform: scale(1.1);
 }
 
 /* Footer */
@@ -270,7 +278,18 @@ footer {
 }
 
 /* Animations */
-@keyframes fadeIn {
+@keyframes fadeInTitle {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInSubTitle {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -281,10 +300,72 @@ footer {
     }
 }
 
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInMember {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes fadeInForm {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .hidden {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease, transform 1s ease;
+    transform: translateY(10px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
 .visible {
