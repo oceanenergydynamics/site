@@ -10,6 +10,7 @@ body {
 h1, h2, h3 {
     text-align: center;
     margin: 20px 0;
+    font-family: 'Oswald', sans-serif;
 }
 
 p {
@@ -39,19 +40,28 @@ p {
 header {
     text-align: center;
     padding: 40px 20px;
-    background: rgba(255, 255, 255, 0.9);
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     margin: 10px 0;
-    color: #001f54;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 header p {
     font-size: 1.2em;
     margin: 10px 0 20px 0;
-    color: #00509e;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 /* Navigation */
@@ -60,6 +70,7 @@ nav ul {
     justify-content: center;
     list-style: none;
     gap: 15px;
+    margin-top: 15px;
 }
 
 nav ul li {
@@ -68,15 +79,16 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 1em;
-    color: #001f54;
+    font-size: 1.1em;
+    color: #ffffff;
+    background: #00509e;
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #00509e;
+    background-color: #00b4d8;
     color: #ffffff;
 }
 
@@ -86,7 +98,7 @@ nav ul li a:hover {
     margin: 30px auto;
     padding: 20px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -165,6 +177,14 @@ p {
     margin: 20px auto;
     width: 100%;
     max-width: 720px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.large-frame {
+    width: 100%;
+    height: 500px;
+    border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
