@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.6;
     background-color: #f4f9ff;
@@ -10,12 +10,12 @@ body {
 h1, h2, h3 {
     text-align: center;
     margin: 20px 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
     margin: 10px 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lora', serif;
     text-align: center;
 }
 
@@ -78,6 +78,7 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-size: 1.1em;
+    font-family: 'Roboto', sans-serif;
     color: #ffffff;
     background: #00509e;
     padding: 10px 15px;
@@ -130,6 +131,7 @@ p {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Lora', serif;
 }
 
 .stat:hover {
@@ -156,6 +158,7 @@ p {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, background 0.3s ease;
     animation: slideInLeft 1.2s ease-in-out;
+    font-family: 'Roboto', sans-serif;
 }
 
 .step:hover {
@@ -207,6 +210,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Lora', serif;
 }
 
 .team-member:hover {
@@ -229,6 +233,7 @@ form {
     flex-direction: column;
     gap: 15px;
     animation: fadeIn 1.5s ease-in-out;
+    font-family: 'Poppins', sans-serif;
 }
 
 form label {
@@ -265,6 +270,7 @@ footer {
     background: #001f54;
     color: #ffffff;
     animation: fadeIn 2s ease-in-out;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Animations */
