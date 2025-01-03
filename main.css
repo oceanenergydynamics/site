@@ -41,10 +41,10 @@ p {
 /* Header */
 header {
     max-width: 1100px;
-    margin: 30px auto;
+    margin: 10px auto;
     padding: 15px;
     border-radius: 10px;
-    background: #001f54;
+    background: rgba(0, 31, 84, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
@@ -56,7 +56,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.3em;
+    font-size: 2.5em;
     margin: 10px 0;
     color: #ffffff;
     font-family: 'Bebas Neue', cursive;
@@ -65,13 +65,13 @@ header h1 {
 header p {
     font-size: 1.2em;
     margin: 10px 0;
-    color: #d1e7f0;
+    color: #ffffff;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
 
 header img {
-    height: 100px; /* Adjusted logo size */
+    height: 120px; /* Adjusted logo size */
     margin-right: 10px;
 }
 
@@ -114,7 +114,7 @@ nav ul li a:hover {
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeIn 2s ease-in-out;
@@ -148,7 +148,7 @@ p {
 .stat {
     text-align: center;
     font-size: 1.3em;
-    background: rgba(0, 180, 216, 0.1);
+    background: rgba(0, 180, 216, 0.2);
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -178,7 +178,7 @@ p {
     min-width: 200px;
     padding: 15px;
     border: 1px solid #00b4d8;
-    background: rgba(0, 180, 216, 0.1);
+    background: rgba(0, 180, 216, 0.2);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, background 0.3s ease;
@@ -190,7 +190,7 @@ p {
 
 .step:hover {
     transform: translateY(-5px);
-    background: rgba(0, 180, 216, 0.2);
+    background: rgba(0, 180, 216, 0.3);
 }
 
 /* Media Section */
@@ -203,7 +203,7 @@ p {
     display: block;
     margin: 20px auto;
     width: 100%;
-    max-width: 1300px; /* Increased width for interactive media */
+    max-width: 1500px; /* Increased width for interactive media */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     animation: fadeIn 1.5s ease-in-out;
@@ -212,7 +212,7 @@ p {
 .large-frame {
     width: 100%;
     max-width: 1500px; /* Increased width */
-    height: 900px; /* Increased height */
+    height: 700px; /* Adjusted height */
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -224,33 +224,34 @@ p {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     animation: fadeIn 2s ease-in-out;
+    justify-content: center;
 }
 
 .team-member {
     text-align: center;
     padding: 15px;
-    background: rgba(0, 180, 216, 0.1);
+    background: rgba(0, 180, 216, 0.2);
     border: 1px solid #00b4d8;
     border-radius: 10px;
     transition: transform 0.3s ease, background 0.3s ease;
-    height: 250px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'PT Serif', serif;
     font-weight: 900;
-    max-width: 300px;
+    max-width: 350px;
 }
 
 .team-member:hover {
     transform: translateY(-5px);
-    background: rgba(0, 180, 216, 0.2);
+    background: rgba(0, 180, 216, 0.3);
 }
 
 .team-member img {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
     border: 2px solid #00b4d8;
@@ -265,9 +266,9 @@ form {
     animation: fadeIn 1.5s ease-in-out;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    max-width: 1500px; /* Widened */
+    max-width: 1700px; /* Widened */
     padding: 20px;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.85);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
