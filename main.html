@@ -7,45 +7,89 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- Ocean video background -->
+    <!-- Ocean Video Background -->
     <video autoplay muted loop id="video-background">
         <source src="ocean-video.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
+    <!-- Header Section -->
     <header>
         <div class="container">
             <h1>Ocean Energy Dynamics</h1>
-            <p>Revolutionizing maritime energy with sustainable wave-powered innovation</p>
+            <p>Innovating Renewable Energy for a Sustainable Maritime Future</p>
         </div>
     </header>
 
-    <section id="about" class="container">
-        <h2>About Ocean Energy Dynamics</h2>
+    <!-- Mission & Vision Section -->
+    <section id="mission-vision" class="container fade-in">
+        <h2>Our Mission & Vision</h2>
         <p>
-            Ocean Energy Dynamics harnesses the untapped power of ocean waves to revolutionize energy solutions for the maritime industry.
-            By utilizing advanced technologies, we create wave-powered systems to generate renewable electricity onboard yachts and ships.
+            At Ocean Energy Dynamics, we strive to revolutionize the maritime industry by harnessing the immense power of ocean waves.
+            Our mission is to reduce fossil fuel dependency, create sustainable energy solutions, and help vessels operate efficiently
+            and cost-effectively. Our vision is a world where the seas fuel progress while preserving the environment.
         </p>
         <p>
-            Our system uses innovative components such as oscillators, hydraulic turbines, and turbulence-reducing grids. This step-by-step
-            process ensures efficient energy capture and transfer, enabling vessels to operate sustainably. Explore our solution below to see
-            how each part of the system contributes to a cleaner future for maritime travel.
+            With cutting-edge wave energy technology and a commitment to innovation, we are building a future where clean energy drives
+            sustainable maritime operations globally.
         </p>
     </section>
 
-    <section id="diagram" class="container">
-        <h2>How It Works</h2>
-        <p>Step-by-step process of our wave energy system:</p>
+    <!-- The Problem & Our Solution Section -->
+    <section id="problem-solution" class="container fade-in">
+        <h2>The Problem & Our Solution</h2>
+        <p>
+            The maritime industry faces two critical challenges: reliance on fossil fuels and high operational costs. These issues not
+            only harm the environment but also burden vessel operators financially. Traditional energy solutions fall short of meeting
+            the needs of a cleaner and more cost-effective future.
+        </p>
+        <p>
+            Ocean Energy Dynamics addresses these challenges with a revolutionary wave energy generator system. Our system captures
+            the energy of ocean waves, converts it into renewable electricity, and integrates seamlessly into ship operations. By doing so,
+            we provide a practical and impactful alternative to fossil fuels, enabling vessels to operate sustainably while reducing costs.
+        </p>
+    </section>
+
+    <!-- Our Innovation Section -->
+    <section id="our-innovation" class="container fade-in">
+        <h2>Our Innovation</h2>
+        <p>
+            Ocean Energy Dynamics has developed a groundbreaking wave energy system that transforms wave motion into renewable energy.
+            Our innovative design ensures efficiency, scalability, and durability. Here's how it works:
+        </p>
         <ol>
-            <li><b>Entrance:</b> Water enters through a one-way inlet equipped with a filter to block debris and marine life.</li>
-            <li><b>Turbulence Reducing Grids:</b> The water flows through grids that straighten and smooth chaotic wave currents.</li>
-            <li><b>Oscillators:</b> Heavy oscillators move with the waves to absorb energy while compressing hydraulic fluid.</li>
-            <li><b>Hydraulic Turbine:</b> Pressurized fluid powers a hydraulic turbine to generate electricity continuously.</li>
-            <li><b>Propulsion:</b> The remaining water exits through a jet stream, reducing drag and powering the vessel.</li>
+            <li><b>Water Entry</b>: Ocean water enters through a one-way inlet system equipped with filters to block debris and protect marine life.</li>
+            <li><b>Turbulence Reduction</b>: The water flows through grids that eliminate chaotic currents, ensuring smooth energy transfer.</li>
+            <li><b>Oscillators</b>: Heavy oscillators move with the waves, converting kinetic energy into hydraulic energy.</li>
+            <li><b>Hydraulic Turbine</b>: Pressurized hydraulic fluid powers turbines, generating consistent electricity.</li>
+            <li><b>Propulsion Assistance</b>: Remaining water exits through a jet stream, aiding vessel propulsion and reducing drag.</li>
         </ol>
+        <p>
+            Our innovation is adaptable to vessels of all sizes, from small yachts to large ships, and requires minimal maintenance, ensuring
+            long-term performance.
+        </p>
     </section>
 
-    <section id="team" class="container">
+    <!-- Innovation Video Section -->
+    <section id="innovation-video" class="container fade-in">
+        <h2>Watch Our Innovation in Action</h2>
+        <video controls id="system-video">
+            <source src="wave-system-overview.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- Interactive 3D Model Section -->
+    <section id="interactive-model" class="container fade-in">
+        <h2>Explore Our 3D Model</h2>
+        <p>
+            Dive deeper into our technology with this interactive 3D model, showcasing every component of the Ocean Energy Dynamics system.
+        </p>
+        <iframe src="https://your-3d-model-url.com" width="100%" height="500px" frameborder="0"></iframe>
+    </section>
+
+    <!-- Meet the Team Section -->
+    <section id="team" class="container fade-in">
         <h2>Meet the Team</h2>
         <div class="team">
             <div class="team-member">
@@ -69,6 +113,24 @@
                 <p>Marketing, communication, and stakeholder engagement.</p>
             </div>
         </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact-us" class="container fade-in">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Please fill out the form below, and we’ll get back to you as soon as possible.</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
     <footer>
