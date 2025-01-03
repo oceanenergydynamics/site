@@ -1,16 +1,4 @@
-/* main.css */
-body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #ffffff;
-    background: #000000;
-    line-height: 1.6;
-    position: relative;
-    overflow: hidden;
-}
-
-/* Ocean video background */
+/* Video Background */
 #video-background {
     position: fixed;
     top: 0;
@@ -22,69 +10,40 @@ body {
     opacity: 0.6;
 }
 
-/* General container for text boxes */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background: transparent;
+    line-height: 1.6;
+}
+
 .container {
     max-width: 1100px;
     margin: auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 
-/* Header styles */
-header {
-    background: rgba(0, 0, 0, 0.9);
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h1, h2 {
     text-align: center;
-    padding: 20px 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-header h1 {
-    margin: 0;
-    font-size: 3em;
     color: #ffffff;
 }
 
-header p {
-    font-size: 1.2em;
-    color: #c0d9e1;
-}
-
-/* Section styles */
-section {
-    margin: 20px 0;
-    padding: 30px;
+#system-video, iframe {
+    width: 100%;
     border-radius: 10px;
-}
-
-.team {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
-.team-member {
-    text-align: center;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px;
-    border-radius: 10px;
-    width: 250px;
-    transition: transform 0.3s ease;
-}
-
-.team-member:hover {
-    transform: scale(1.05);
-}
-
-.team-member img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    border: 2px solid #00b4d8;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
