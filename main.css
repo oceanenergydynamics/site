@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Anton', sans-serif;
     color: #333;
     line-height: 1.6;
     background-color: #f4f9ff;
@@ -11,14 +11,14 @@ h1, h2, h3 {
     text-align: center;
     margin: 20px 0;
     font-family: 'Oswald', sans-serif;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 p {
     margin: 10px 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 /* Video Background */
@@ -38,11 +38,13 @@ p {
     object-fit: cover;
     autoplay: true;
     playsinline: true;
+    loop: true;
+    muted: true;
 }
 
 /* Header */
 header {
-    max-width: 800px;
+    max-width: 900px;
     margin: 30px auto;
     padding: 20px;
     border-radius: 10px;
@@ -51,6 +53,9 @@ header {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     animation: fadeIn 2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header h1 {
@@ -61,11 +66,16 @@ header h1 {
 }
 
 header p {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin: 10px 0;
     color: #d1e7f0;
     font-family: 'Poppins', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
+}
+
+header img {
+    height: 60px;
+    margin-right: 20px;
 }
 
 /* Navigation */
@@ -84,14 +94,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-family: 'Lato', sans-serif;
     color: #ffffff;
     background: #00509e;
-    padding: 10px 15px;
+    padding: 10px 20px;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 nav ul li a:hover {
@@ -101,25 +111,29 @@ nav ul li a:hover {
 
 /* Sections */
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: 30px auto;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeIn 2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
+    font-size: 3em;
     color: #00509e;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 /* Problem & Solution */
@@ -134,14 +148,16 @@ p {
 
 .stat {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.8em;
     background: rgba(0, 180, 216, 0.1);
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
+    width: 100%;
+    max-width: 400px;
 }
 
 .stat:hover {
@@ -161,7 +177,7 @@ p {
 .step {
     flex: 1;
     min-width: 250px;
-    padding: 15px;
+    padding: 20px;
     border: 1px solid #00b4d8;
     background: rgba(0, 180, 216, 0.1);
     border-radius: 10px;
@@ -169,7 +185,8 @@ p {
     transition: transform 0.3s ease, background 0.3s ease;
     animation: slideInLeft 1.2s ease-in-out;
     font-family: 'Roboto Slab', serif;
-    font-weight: 700;
+    font-weight: 900;
+    text-align: center;
 }
 
 .step:hover {
@@ -211,18 +228,19 @@ p {
 
 .team-member {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     background: rgba(0, 180, 216, 0.1);
     border: 1px solid #00b4d8;
     border-radius: 10px;
     transition: transform 0.3s ease, background 0.3s ease;
-    height: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'PT Serif', serif;
-    font-weight: 700;
+    font-weight: 900;
+    max-width: 400px;
 }
 
 .team-member:hover {
@@ -246,23 +264,24 @@ form {
     gap: 15px;
     animation: fadeIn 1.5s ease-in-out;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 800;
 }
 
 form label {
-    font-size: 1.2em;
-    font-weight: 700;
+    font-size: 1.4em;
+    font-weight: 900;
 }
 
 form input,
 form textarea,
 form button {
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
 }
 
 form button {
@@ -270,7 +289,7 @@ form button {
     color: white;
     cursor: pointer;
     transition: background 0.3s;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 form button:hover {
@@ -282,12 +301,12 @@ form button:hover {
 footer {
     text-align: center;
     padding: 10px 0;
-    font-size: 1em;
+    font-size: 1.2em;
     background: #001f54;
     color: #ffffff;
     animation: fadeIn 2s ease-in-out;
     font-family: 'Roboto Mono', monospace;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 /* Animations */
