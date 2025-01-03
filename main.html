@@ -7,81 +7,72 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- Ocean Video Background -->
-    <div id="video-container">
-        <video autoplay muted loop id="video-background">
-            <!-- Placeholder Video Source -->
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <div id="overlay"></div>
-    </div>
+    <!-- YouTube video embedded as a background -->
+    <iframe id="video-background" src="https://www.youtube.com/embed/17r_x3igbzg?autoplay=1&mute=1&loop=1&playlist=17r_x3igbzg" 
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-    <!-- Header Section -->
     <header>
-        <div class="container header-content">
+        <div class="container">
             <h1>Ocean Energy Dynamics</h1>
-            <p>Powering Yachts Sustainably – Reducing Fossil Fuel Use by 30%</p>
+            <p>Revolutionizing maritime energy with sustainable wave-powered innovation</p>
         </div>
     </header>
 
-    <!-- Mission & Vision Section -->
-    <section id="mission-vision" class="container">
-        <h2>Our Mission & Vision</h2>
+    <section id="mission-problem" class="container">
+        <h2>Our Mission and The Problem</h2>
         <p>
-            At Ocean Energy Dynamics, we are committed to transforming the yachting industry with renewable energy solutions. 
-            Our mission is to reduce reliance on fossil fuels by 30% and provide efficient, sustainable power for luxury yachts and maritime vessels.
+            Our mission is to redefine maritime energy through sustainable solutions, harnessing wave power to create eco-friendly, cost-effective systems. We aim to revolutionize the maritime industry by driving innovation and reducing environmental impact, ensuring a cleaner and greener future for generations to come.
         </p>
         <p>
-            With tropical inspiration and cutting-edge wave energy technology, we envision a maritime world powered by the seas themselves.
+            The maritime industry heavily relies on fossil fuels, contributing significantly to global CO2 emissions. Over 940 million tons of CO2 are emitted annually by ships, accounting for 2.5% of global emissions. Rising fuel costs and environmental regulations are pushing the industry to adopt sustainable alternatives.
         </p>
     </section>
 
-    <!-- The Problem & Our Solution Section -->
-    <section id="problem-solution" class="container">
-        <h2>The Problem & Our Solution</h2>
+    <section id="our-story" class="container">
+        <h2>Our Story</h2>
         <p>
-            Yachts and other vessels heavily rely on fossil fuels, contributing to carbon emissions and high operational costs. 
-            This affects the environment and burdens yacht owners seeking efficient alternatives.
+            Ocean Energy Dynamics began as a bold idea shared by a group of passionate innovators who sought to tackle the pressing challenges of fuel dependency and environmental degradation in the maritime industry. With diverse expertise in engineering, business strategy, and environmental science, our team came together to design a solution that marries sustainability with practicality.
         </p>
         <p>
-            Ocean Energy Dynamics introduces a wave energy generator that captures wave motion, converting it into renewable electricity 
-            that seamlessly integrates into existing yacht systems. This reduces costs, emissions, and dependency on traditional fuels.
+            From early brainstorming sessions to prototyping and testing, our journey has been driven by a singular vision: to create a renewable energy system that transforms how ships harness and use energy. What started as a school project has evolved into a groundbreaking innovation poised to reshape the future of maritime travel.
         </p>
     </section>
 
-    <!-- Our Innovation Section -->
-    <section id="our-innovation" class="container">
-        <h2>Our Innovation</h2>
+    <section id="solution" class="container">
+        <h2>Our Solution</h2>
         <p>
-            Our cutting-edge wave energy system works seamlessly to power yachts. Here's how:
+            Ocean Energy Dynamics provides an innovative wave-energy system that captures and converts ocean wave motion into electricity. Our scalable solution integrates seamlessly into marine vessels, reducing fuel dependency, cutting emissions, and creating sustainable energy.
         </p>
-        <ol>
-            <li><b>Step 1: Water Entry</b> - Water flows through a one-way inlet, blocking debris and protecting marine life.</li>
-            <li><b>Step 2: Turbulence Reduction</b> - Grids smooth chaotic wave currents, creating optimized water flow.</li>
-            <li><b>Step 3: Oscillators</b> - Oscillators move with the waves, converting kinetic energy into hydraulic energy.</li>
-            <li><b>Step 4: Hydraulic Turbine</b> - Pressurized hydraulic fluid powers turbines, generating renewable electricity.</li>
-            <li><b>Step 5: Propulsion Assistance</b> - Remaining water exits as a jet stream, enhancing propulsion for the yacht.</li>
-        </ol>
     </section>
 
-    <!-- Innovation Video Section -->
+    <section id="how-it-works" class="container">
+        <h2>How It Works</h2>
+        <ul>
+            <li><strong>Wave Capture:</strong> Waves enter through a one-way inlet, powering internal oscillators.</li>
+            <li><strong>Energy Conversion:</strong> Oscillators drive hydraulic pistons, compressing fluid to spin turbines.</li>
+            <li><strong>Power Output:</strong> The turbines generate electricity, feeding the ship's systems and propulsion.</li>
+        </ul>
+    </section>
+
     <section id="innovation-video" class="container">
-        <h2>Watch Our Innovation in Action</h2>
-        <video controls id="system-video">
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <h2>Innovation Video</h2>
+        <p>Watch our pitch to see how Ocean Energy Dynamics transforms wave energy into a reliable power source for vessels.</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/your-innovation-video-id" 
+                frameborder="0" allowfullscreen></iframe>
+        </div>
+        <h2>System Diagram</h2>
+        <img src="diagram.jpg" alt="System Diagram" class="diagram">
     </section>
 
-    <!-- Interactive 3D Model Section -->
-    <section id="interactive-model" class="container">
+    <section id="explore-model" class="container">
         <h2>Explore Our 3D Model</h2>
-        <p>Interact with our 3D model to see how our system fits into yachts and maritime vessels.</p>
-        <iframe src="https://your-3d-model-url.com" width="100%" height="500px" frameborder="0"></iframe>
+        <p>Interact with our 3D model to better understand how Ocean Energy Dynamics works.</p>
+        <div class="model-container">
+            <iframe src="https://your-3d-model-url.com" width="100%" height="500px" frameborder="0"></iframe>
+        </div>
     </section>
 
-    <!-- Meet the Team Section -->
     <section id="team" class="container">
         <h2>Meet the Team</h2>
         <div class="team">
@@ -108,18 +99,18 @@
         </div>
     </section>
 
-    <!-- Contact Us Section -->
-    <section id="contact-us" class="container">
+    <section id="contact" class="container">
         <h2>Contact Us</h2>
-        <form id="contact-form">
+        <p>If you have any inquiries, feel free to reach out to us at <a href="mailto:contact@oceanenergydynamics.com">contact@oceanenergydynamics.com</a>.</p>
+        <form onsubmit="handleSubmit(event)">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="text" id="name" name="name" required>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <input type="email" id="email" name="email" required>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
             <button type="submit">Submit</button>
         </form>
@@ -130,7 +121,6 @@
             <p>&copy; 2025 Ocean Energy Dynamics. All rights reserved.</p>
         </div>
     </footer>
-
     <script src="main.js"></script>
 </body>
 </html>
