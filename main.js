@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Function to handle form submission
+// Function to handle form submission (if any forms exist)
 function handleSubmit(event) {
     event.preventDefault(); // Prevent the default form submission
     alert("Thank you for reaching out! We will get back to you shortly.");
