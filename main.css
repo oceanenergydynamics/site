@@ -71,7 +71,8 @@ header p {
 }
 
 header img {
-    height: 120px; /* Adjusted logo size */
+    height: 30%; /* Adjusted logo size */
+    width: 30%;
     margin-right: 10px;
 }
 
