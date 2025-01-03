@@ -40,9 +40,9 @@ p {
 
 /* Header */
 header {
-    max-width: 900px;
+    max-width: 800px; /* Reduced size */
     margin: 30px auto;
-    padding: 20px;
+    padding: 15px; /* Adjusted padding */
     border-radius: 10px;
     background: #001f54;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -55,14 +55,14 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 2.3em; /* Slightly smaller */
     margin: 10px 0;
     color: #ffffff;
     font-family: 'Bebas Neue', cursive;
 }
 
 header p {
-    font-size: 1.4em;
+    font-size: 1.2em; /* Adjusted */
     margin: 10px 0;
     color: #d1e7f0;
     font-family: 'Poppins', sans-serif;
@@ -70,7 +70,7 @@ header p {
 }
 
 header img {
-    height: 50px;
+    height: 70px; /* Adjusted logo size */
     margin-right: 10px;
 }
 
@@ -79,8 +79,8 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 15px;
-    margin-top: 15px;
+    gap: 10px; /* Adjusted spacing */
+    margin-top: 10px;
     flex-wrap: wrap;
 }
 
@@ -90,11 +90,11 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1em; /* Reduced size */
     font-family: 'Lato', sans-serif;
     color: #ffffff;
     background: #00509e;
-    padding: 10px 20px;
+    padding: 6px 12px; /* Adjusted padding */
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
     font-weight: 800;
@@ -107,9 +107,9 @@ nav ul li a:hover {
 
 /* Sections */
 .container {
-    max-width: 950px;
-    margin: 30px auto;
-    padding: 30px;
+    max-width: 800px; /* Reduced size */
+    margin: 20px auto;
+    padding: 20px; /* Adjusted padding */
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.95);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -122,13 +122,13 @@ nav ul li a:hover {
 
 h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 2.5em;
+    font-size: 2.3em; /* Adjusted */
     color: #00509e;
     font-weight: 900;
 }
 
 p {
-    font-size: 1.2em;
+    font-size: 1em; /* Slightly smaller */
     text-align: center;
 }
 
@@ -144,16 +144,16 @@ p {
 
 .stat {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.3em; /* Adjusted size */
     background: rgba(0, 180, 216, 0.1);
-    padding: 20px;
+    padding: 15px; /* Adjusted padding */
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     width: 100%;
-    max-width: 450px;
+    max-width: 400px; /* Reduced size */
 }
 
 .stat:hover {
@@ -172,8 +172,8 @@ p {
 
 .step {
     flex: 1;
-    min-width: 250px;
-    padding: 20px;
+    min-width: 200px; /* Adjusted */
+    padding: 15px; /* Adjusted */
     border: 1px solid #00b4d8;
     background: rgba(0, 180, 216, 0.1);
     border-radius: 10px;
@@ -200,7 +200,7 @@ p {
     display: block;
     margin: 20px auto;
     width: 100%;
-    max-width: 720px;
+    max-width: 800px; /* Reduced size */
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
     animation: fadeIn 1.5s ease-in-out;
@@ -208,7 +208,7 @@ p {
 
 .large-frame {
     width: 100%;
-    height: 500px;
+    height: 500px; /* Reduced height */
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
@@ -224,19 +224,19 @@ p {
 
 .team-member {
     text-align: center;
-    padding: 20px;
+    padding: 15px; /* Adjusted padding */
     background: rgba(0, 180, 216, 0.1);
     border: 1px solid #00b4d8;
     border-radius: 10px;
     transition: transform 0.3s ease, background 0.3s ease;
-    height: 300px;
+    height: 250px; /* Adjusted height */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'PT Serif', serif;
     font-weight: 900;
-    max-width: 350px;
+    max-width: 300px; /* Adjusted width */
 }
 
 .team-member:hover {
@@ -245,8 +245,8 @@ p {
 }
 
 .team-member img {
-    width: 100px;
-    height: 100px;
+    width: 90px; /* Adjusted size */
+    height: 90px; /* Adjusted size */
     border-radius: 50%;
     margin-bottom: 10px;
     border: 2px solid #00b4d8;
@@ -261,10 +261,15 @@ form {
     animation: fadeIn 1.5s ease-in-out;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
+    max-width: 100%;
+    padding: 15px; /* Adjusted */
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 form label {
-    font-size: 1.2em;
+    font-size: 1.1em; /* Adjusted */
     font-weight: 900;
 }
 
@@ -272,7 +277,7 @@ form input,
 form textarea,
 form button {
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1.1em; /* Adjusted */
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
@@ -297,7 +302,7 @@ form button:hover {
 footer {
     text-align: center;
     padding: 10px 0;
-    font-size: 1.2em;
+    font-size: 1.1em; /* Adjusted */
     background: #001f54;
     color: #ffffff;
     animation: fadeIn 2s ease-in-out;
