@@ -121,7 +121,6 @@ nav ul li a:hover {
     animation: fadeIn 2s ease-in-out;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 h2 {
