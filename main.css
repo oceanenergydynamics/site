@@ -174,22 +174,6 @@ p {
     animation: fadeIn 2s ease-in-out;
 }
 
-.iframe-container {
-  width: 100%; /* Full width of the parent container */
-  height: 100vh; /* Full viewport height */
-  max-width: 100%; /* Ensure it doesn’t exceed the screen width */
-  max-height: 100vh; /* Ensure it doesn’t exceed the viewport height */
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-}
-
-.iframe-container iframe {
-  width: 100%; /* Take the maximum width of the container */
-  height: 100%; /* Take the maximum height of the container */
-  border: none; /* Remove any border */
-}
-
 .step {
     flex: 1;
     min-width: 200px;
