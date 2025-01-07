@@ -196,7 +196,6 @@ p {
 
 /* Media Section */
 .media {
-    display: contents;
     text-align: center;
     margin-top: 20px;
 }
