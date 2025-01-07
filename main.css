@@ -198,6 +198,7 @@ p {
 .media {
     text-align: center;
     margin-top: 20px;
+    display: contents;
 }
 
 .center-video {
